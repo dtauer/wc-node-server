@@ -1,4 +1,8 @@
 extends template
 
 block content
-    h1 Contact Us
+    h1 Contact 
+    form(method="POST")
+        input(type="text" name="name" placeholder="Your Name")
+        input(type="email" name="email" placeholder="you@whatev.com")
+        input(type="submit" value="Submit Form")
