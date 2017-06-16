@@ -14,6 +14,7 @@ app.set('view engine', 'pug')
 app.use(express.static(path.join(__dirname, './public')))
 
 // Set up our Routes
+// Still need to handle 404's
 app.get('/', function(req, res){
     res.render('index', {title:'Home'})
 })
